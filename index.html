@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><meta name="theme-color" content="#101c25">
+<title>Whisperwild — The Lost Light</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="game"><canvas id="scene"></canvas>
+<div class="vignette"></div>
+<header class="topbar"><div class="brand"><span class="brand-mark">✦</span><div><b>WHISPERWILD</b><small>THE LOST LIGHT</small></div></div><div class="objective"><span class="quest-icon">✧</span><div><small>YOUR JOURNEY</small><b id="quest">Find the Sunshard Shrine</b></div></div><div class="map-wrap"><canvas id="map" width="124" height="124"></canvas><span class="map-n">N</span></div></header>
+<section class="status"><div class="hearts" id="hearts"></div><div class="crystal-count"><span>◇</span><b id="shards">0</b><small> SUNSHARDS</small></div></section>
+<div class="hint" id="hint"><span>✦</span> A quiet wind carries a forgotten song…</div>
+<div class="toast" id="toast"></div>
+<div class="controls-help"><kbd>WASD</kbd> move <kbd>SPACE</kbd> jump <kbd>F</kbd> strike <kbd>SHIFT</kbd> sprint</div>
+<div class="mobile-controls" id="mobileControls"><div id="stick" class="stick"><div class="stick-ring"></div><div class="stick-knob" id="knob"></div></div><button class="touch-btn jump-btn" id="jumpBtn"><span>↑</span><small>JUMP</small></button><button class="touch-btn attack-btn" id="attackBtn"><span>✦</span><small>STRIKE</small></button></div>
+<div class="start-screen" id="startScreen"><div class="start-art"><div class="sun-orb"></div><div class="art-mountain m1"></div><div class="art-mountain m2"></div><div class="art-grass"></div></div><div class="start-content"><div class="eyebrow">A LITTLE WORLD OF WONDER</div><h1>Whisper<span>wild</span></h1><p>The old light has gone quiet. Follow the wind, gather lost sunshards, and wake the shrine at the heart of the wilds.</p><div class="start-meta"><span>◈ &nbsp;EXPLORE</span><span>✧ &nbsp;DISCOVER</span><span>⚔ &nbsp;BE BRAVE</span></div><button class="play-button" id="playBtn">BEGIN YOUR JOURNEY <span>→</span></button><small class="start-note">Best played with sound on · No map edge, only the sea</small></div></div>
+<div class="win-screen hidden" id="winScreen"><div class="win-card"><span class="win-spark">✦</span><div class="eyebrow">THE WILD REMEMBERS</div><h2>The light is home.</h2><p>You found the Sunshard Shrine and returned its song to the valley.</p><button class="play-button" id="againBtn">WANDER AGAIN <span>↻</span></button></div></div>
+<div id="loading" class="loading"><span>✦</span> Waking the wilds…</div>
+</main><script type="module" src="game.js"></script>
+</body></html>
